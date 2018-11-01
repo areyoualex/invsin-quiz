@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  margin: 0;
+  font-family: Muli;
+}
+body {
+  background-color: #d97e7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+body > * {
+  margin-top: 3rem;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

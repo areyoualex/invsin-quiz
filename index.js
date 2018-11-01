@@ -7,11 +7,14 @@ const path = require('path');
 
 app.set('views', './views');
 
-//Route GET requests to '/'
+//Route GET requests to /
 app.get('/', (req, res) => {
   //Return index.html
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
+
+//Serve static files in /static
+app.use(express.static('static'));
 
 //Server starts taking requests here
 app.listen(port, () => console.log(`Listening on ${port}`));
