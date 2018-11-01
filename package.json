@@ -1,0 +1,23 @@
+{
+  "name": "invsinusoid",
+  "version": "1.0.0",
+  "description": "Which inverse sinusoidal function are you? Find out by taking this quiz!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areyoualex/invsin-quiz.git"
+  },
+  "author": "Alex Ruiz <ruiz.alex0302@gmail.com> (https://www.ruizalex.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/areyoualex/invsin-quiz/issues"
+  },
+  "homepage": "https://github.com/areyoualex/invsin-quiz#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
