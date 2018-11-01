@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inverse Sinusoid Quiz!</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <div class="about"
+      <p>
+        Here you can take a quiz to find out what inverse sinusoidal function you
+        are!
+      </p>
+      <p>
+        We also have a separate quiz to figure out what inverse sinusoidal function
+        you're looking at!
+      </p>
+    </div>
+    <div>
+      <button onclick="showQuiz1()">What inverse sinusoidal function am I?</button>
+      <button onclick="showQuiz2()">What inverse sinusoidal function am I looking at?</button>
+    </div>
+    <div id="quiz-box">
+      <form name="quiz1" id="quiz1" action="results" method="POST">
+        <p>Choose a character from Brooklyn 99:</p>
+        <fieldset>
+          <% b99.forEach(function(user){ %>
+            <div>
+              <label for="<%= user.short %>"><%= user.name %></label>
+              <input type="radio" name="character" id="<%= user.short %>" value="<%= user.short %>">
+            </div>
+          <% }); %>
+          <input type="submit" value="What inverse sinusoidal function am I?">
+        </fieldset>
+      </form>
+      <form name="quiz2" id="quiz2" action="results" method="POST">
+      </form>
+    </div>
+  </body>
+</html>
