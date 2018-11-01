@@ -20,34 +20,40 @@ const sinusoids = {
   atan: {
     name: "Inverse Tangent",
     description: "You are a somber and serious person. When it comes time to get\
-    down to business, you're dependable. You are probably an introvert."
+    down to business, you're dependable. You are probably an introvert.",
+    short: "atan"
   },
   acot: {
     name: "Inverse Cotangent",
     description: "You are a serious person. Sometimes, you might not get all the\
     hip new trends of this generation, but it doesn't matter because what matters\
-    to you is getting the job done. You are probably an extrovert."
+    to you is getting the job done. You are probably an extrovert.",
+    short: "acot"
   },
   acos: {
     name: "Inverse Cosine",
     description: "You are an energetic leader. You love to be in charge and you\
-    empower those around you to do their best. You are probably an introvert."
+    empower those around you to do their best. You are probably an introvert.",
+    short: "acos"
   },
   asin: {
     name: "Inverse Sine",
     description: "You are an energetic leader. You find yourself in charge and\
-    leading the way in your group of friends. You are probably an introvert."
+    leading the way in your group of friends. You are probably an introvert.",
+    short: "asin"
   },
   asec: {
     name: "Inverse Secant",
     description: "You are a fun person. You can be childish at times, but you\
     are definitely the party person among your friends. You are probably an\
-    extrovert."
+    extrovert.",
+    short: "asec"
   },
   acsc: {
     name: "Inverse Cosecant",
     description: "You are the fun one among your group of friends. You always find a\
-    way to cheer up your buddies when they need it most. You are probably an introvert."
+    way to cheer up your buddies when they need it most. You are probably an introvert.",
+    short: "acsc"
   },
 };
 

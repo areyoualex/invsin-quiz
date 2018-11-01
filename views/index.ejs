@@ -28,16 +28,19 @@
     </div>
     <div id="quiz-box">
       <form name="quiz1" id="quiz1" action="result" method="POST">
-        <p>Choose a character from Brooklyn 99:</p>
-        <fieldset>
+        <h2>Choose a character from Brooklyn 99:</h2>
+        <div>
           <% b99.forEach(function(user){ %>
             <div>
-              <label for="<%= user.short %>"><%= user.name %></label>
+              <label for="<%= user.short %>">
+                <%= user.name %>
+                <img src="img/<%= user.short %>.jpg" alt="<%=user.name %>" />
+              </label>
               <input type="radio" name="character" id="<%= user.short %>" value="<%= user.short %>">
             </div>
           <% }); %>
-          <input type="submit" value="What inverse sinusoidal function am I?">
-        </fieldset>
+        </div>
+        <input type="submit" value="What inverse sinusoidal function am I?">
       </form>
       <form name="quiz2" id="quiz2" action="results" method="POST">
         <h2>Under construction, sorry!</h2>

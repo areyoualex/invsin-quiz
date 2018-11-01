@@ -13,6 +13,7 @@ body {
 }
 body > * {
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 body > div {
   display: flex;
@@ -21,4 +22,27 @@ body > div {
 }
 form {
   display: none;
+}
+#quiz1 > div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+#quiz1 img {
+  width: 12rem;
+}
+#quiz1 > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 2rem;
+}
+#quiz1 > input {
+  margin: auto;
+}
+#quiz1 label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
